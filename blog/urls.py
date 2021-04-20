@@ -26,7 +26,7 @@ schema_view = get_swagger_view(title='Blog')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', schema_view),
+    # path('', schema_view),
     path('docs/', include_docs_urls(title='BlogAPI')),
     path('api/v1/accounts/', include(('accounts.urls',  'accounts'), namespace="accounts-api")),
     path('api/v1/forum/', include(('forum.urls', 'forum'), namespace='forum-api')),
